@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>julia manou</title>
+    <title>julia's super cool website</title>
 </head>
 <body>
-    hello world :)
+    <h1>grocery list</h1>
+    <p>(do not forget!)</p>
+    <ol>
+        <li>cheese</li>
+        <ul>
+            <li>smoked gouda</li>
+            <li>pecorino romano</li>
+            <li>cheddars</li>
+            <li>for more cheese ideas:</li>
+            <ul>
+                <li><a href="https://www.safeway.com/shop/search-results.html?q=cheese">more cheese!</a></li>
+            </ul>
+        </ul>
+        <li>broccoli</li>
+        <!--egg list item and image-->
+        <li>eggs (so many)</li>
+        <ul>
+            <li><img src="chicken.jpeg" alt="chicken" width="300"></li>
+        </ul>
+    </ol>
+
+    <form action="thanks.html" method="GET">
+        <h2>confirm list</h2>
+        <p>please confirm this list by providing your personal information</p>
+        <label for="emailtag">email:</label>
+        <input id="emailtag" type="email" name="emailtag" placeholder="example@gmail.com">
+        
+        <label for="passwordtag">create pass:</label>
+        <input id="passwordtag" type="password" name="pass" placeholder="password">
+        <p>how was your experience? (1-3)</p>
+        <select name="choice">
+            <option value="SELECT">SELECT</option>
+            <option value="1">not great</option>
+            <option value="2">decent</option>
+            <option value="3">amazing!</option>
+        </select>
+        <p>would you recommend this service to a loved one?</p>
+        <label for="yes">yes</label>
+        <input type="radio" name="yesno" value="yes">
+        <label for="no">no</label>
+        <input type="radio" name="yesno" value="yes">
+
+        <p>if not, please explain:</p>
+        <textarea name="explainbox" rows="8" cols="80"></textarea>
+
+        <input type="submit" name="" value="confirm">
+    </form>
+
 </body>
 </html>
