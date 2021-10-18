@@ -14,87 +14,91 @@
   <div data-include="nav"></div>
   <!--Whole page container div-->
   <div class="p-4">
-    <div class="m-4 border" style="height: 350px">
+    <div class="m-4 border border-info rounded" style="height: 450px">
       <div class="jumbotwon">
-        <br><br><br><br><br>
-        <h1 class="display-3" id="fluidjumbo">your home.</h1>
+        <br><br><br><br><br><br><br>
+        <h1 class="display-3">your home.</h1>
       </div>
     </div>
 
-    <div class="row m-4 border" style="height: 400px">
-      <h3 class="display-6">sharing your story</h3>
-      <p>reference "community" as form of "home", fill out form, interact with others (WHY share)</p>
+    <br><br>
+
+    <div class="row m-4" style="height: 400px">
+      <h1 class="display-4">sharing your story</h1>
+      <h3 class="fw-light">i've covered places, i've touched on things, and now i'll talk about people, like you and me. one person, or even an entire community, can be another form of "home". would you believe it? below you'll find a form that asks for some of your personal information, and there you can share your own definition of "home". you dont have to share if you don't want to, but by creating the form i hope to establish a community of people that feel free to share their experiences and establish a home for those who don't already have one. if you don't want to share, you can go straight to the "us" page, where you'll find community responses.</h3>
     </div>
 
-    <div class="m-4 p-4 border">
+    <br><br>
+
+    <div class="m-4 p-4">
       <form class="needs-validation" action="uspage.html" method="get">
-        <div class="row border">
-          <h3 class="display-6">about you</h3>
+        <div class="row pb-5">
+          <h1 class="display-4">about you</h1>
         </div>
-        <div class= "row border">
-          <div class="col-6 border">
-            <label for="name">your name</label>
+        <div class= "row pb-5">
+          <div class="col-6">
+            <h3 class="pb-2"><label for="name" class="fw-light">your name</label></h3>
             <input type="text" class="form-control" id="name" name="name" placeholder="name" required>
           </div>
-          <div class="col-6 border">
-            <label for="email">email address</label>
+          <div class="col-6">
+            <h3 class="pb-2"><label class="fw-light" for="email">email address (optional)</label></h3>
             <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
           </div>
         </div>
-        <div class="row border">
-          <p>what are your preferred pronouns?</p>
+        <div class="row">
+          <h3 class="fw-light pb-3">what are your preferred pronouns?</h3>
         </div>
-        <div class="row border">
-          <div class="col-4 border">
+        <div class="row pb-1">
+          <div class="col-3">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="she/her" id="shecheck" name="pron">
               <label class="form-check-label" for="shecheck">
-                she/her
+                <h5 class="fw-light">she/her</h5>
               </label>
             </div>
           </div>
-          <div class="col-4 border">
+          <div class="col-3">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="he/him" id="hecheck" name="pron">
               <label class="form-check-label" for="hecheck">
-                he/him
+                <h5 class="fw-light">he/him</h5>
               </label>
             </div>
           </div>
-          <div class="col-4 border">
+          <div class="col-3">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="they/them" id="theycheck" name="pron">
               <label class="form-check-label" for="theycheck">
-                they/them
+                <h5 class="fw-light">they/them</h5>
               </label>
             </div>
           </div>
         </div>
-        <div class="row border">
-          <div class="col-4 border">
+        <div class="row pb-5">
+          <div class="col-3">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="other (ask)" id="othercheck" name="pron">
               <label class="form-check-label" for="othercheck">
-                other (ask me)
+                <h5 class="fw-light">other (ask me)</h5>
               </label>
             </div>
           </div>
-          <div class="col-4 border">
+          <div class="col-3">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" value="" id="prefcheck" name="pron">
               <label class="form-check-label" for="prefcheck">
-                prefer not to say
+                <h5 class="fw-light">prefer not to say</h5>
               </label>
             </div>
           </div>
         </div>
-        <div class="row border">
-          <p>what is your definition of "home"?</p>
+        <div class="row  pb-3">
+          <h3 class="fw-light">what is your definition of "home"?</h3>
         </div>
-        <div class="row border">
-          <textarea class="form-control" id="writestuff" name="writestuff" rows="5" required></textarea>
+        <div class="row pb-3">
+          <textarea class="form-control" id="writestuff" name="writestuff" rows="10" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary mt-3" id="hehebutt">Submit</button>
+        <button type="submit" class="btn btn-secondary mt-3">i'm done!</button>
       </form>
     </div>
   </div>
